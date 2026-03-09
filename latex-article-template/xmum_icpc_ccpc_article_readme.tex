@@ -1,0 +1,203 @@
+\documentclass{xmum_icpc_ccpc_article}
+
+\title{厦门大学马来西亚分校算法竞赛兴趣小组\\模板使用说明}
+\author{
+    \url{https://github.com/Xiamen-University-Malaysia/XMUM_ICPC_CCPC}\\
+    \small 执行组长：\href{mailto:zeyu1024@outlook.com}{崔泽禹}}
+\date{\today}
+
+\begin{document}
+
+\XMUMSetLogoPath{../logo}
+\XMUMSetCoverTypeCN{模板}
+\XMUMSetCoverTypeEN{TEMPLATE}
+\XMUMSetCoverMainCN{厦门大学马来西亚分校\\算法竞赛兴趣小组}
+\XMUMSetCoverMainEN{Xiamen University Malaysia\\Algorithm Contest Interest Group}
+\XMUMSetLogoBlue{xiamen_university_logo_blue.png}
+\XMUMSetLogoWhite{xiamen_university_logo_white.png}
+
+\XMUMMakeCoverWithBackground
+\XMUMMakeCover
+
+\newpage
+\maketitle
+\tableofcontents
+\thispagestyle{titlepage}
+
+\newpage
+\XMUMCenterTextPage{这是一个模板说明}
+
+\pagestyle{fancy}
+\pagenumbering{arabic}
+
+\section{编译说明}
+\noindent 本模板使用 \LaTeX{} 编写，推荐使用两次 \texttt{XeLaTeX} 编译器进行编译，以确保正确生成目录和引用。编译命令如下：
+\begin{verbatim}xelatex xmum_icpc_ccpc_article_example.tex && 
+xelatex xmum_icpc_ccpc_article_example.tex
+\end{verbatim}
+\noindent 或使用集成开发环境（如 \href{https://texstudio.sourceforge.net}{TeXstudio}、\href{https://www.overleaf.com/project}{Overleaf}）进行编译，也可在 VS Code 中使用 \href{https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop}{LaTeX Workshop} 插件进行编译，配置过程请参考 \url{https://zhuanlan.zhihu.com/p/166523064}。
+\noindent 模板默认添加缩进，若不需要缩进可在导言区添加 \verb|\setlength\parindent{0pt}| 来取消首行缩进。
+
+\section{可调用的接口}
+\noindent 本模板类 \texttt{xmum\_icpc\_ccpc\_article.cls} 已封装封面参数、页面组件与常用排版配置。在此章给出可直接调用的接口，可参考 \texttt{xmum\_icpc\_ccpc\_article\_readme.tex} 进行设置与使用。
+
+\subsection{封面与参数设置}
+\noindent 以下命令可在 \verb|\begin{document}| 后、生成封面前进行设置：
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{@{}ll@{}}
+        \toprule
+        命令 & 作用 \\
+        \midrule
+        \texttt{\string\XMUMSetLogoPath\{path\}} & 设置图像资源目录，默认为上级目录 \texttt{../logo} \\
+        \midrule
+        \texttt{\string\XMUMSetCoverTypeCN\{text\}} & 设置中文封面类型，如：模板、提案、手册 \\
+        \texttt{\string\XMUMSetCoverTypeEN\{text\}} & 设置英文封面类型，如：{\footnotesize TEMPLATE, PROPOSAL, MANUAL / HB} \\
+        \midrule
+        \texttt{\string\XMUMSetCoverMainCN\{text\}} & 设置中文封面主标题， \\
+        & 默认为``厦门大学马来西亚分校算法竞赛兴趣小组'' \\
+        \texttt{\string\XMUMSetCoverMainEN\{text\}} & 设置英文封面主标题， \\
+        & 默认为{\footnotesize “Xiamen University Malaysia Algorithm Contest Interest Group”} \\
+        \midrule
+        \texttt{\string\XMUMSetLogoBlue\{file\}} & 设置白底封面使用的深色校徽文件， \\
+        & 默认为 \texttt{xiamen\_university\_logo\_blue.png} \\
+        \texttt{\string\XMUMSetLogoWhite\{file\}} & 设置深底封面使用的浅色校徽文件， \\
+        & 默认为 \texttt{xiamen\_university\_logo\_white.png} \\
+        \midrule
+        \texttt{\string\XMUMSetBuildingBlue\{file\}} & 设置深色建筑底图文件， \\
+        & 默认为 \texttt{xmum\_building\_blue.png} \\
+        \texttt{\string\XMUMSetBuildingWhite\{file\}} & 设置白色建筑底图文件， \\
+        & 默认为 \texttt{xmum\_building\_white.png} \\
+        \texttt{\string\XMUMSetBuildingColor\{file\}} & 设置彩色建筑底图文件， \\
+        & 默认为 \texttt{xmum\_building.png} \\
+        \bottomrule
+    \end{tabular}
+    \caption{封面参数命令一览}
+\end{table}
+
+\noindent 例如：
+\begin{verbatim}
+\XMUMSetLogoPath{../logo}
+\XMUMSetCoverTypeCN{模板}
+\XMUMSetCoverTypeEN{TEMPLATE}
+\XMUMSetLogoWhite{xiamen_university_logo_white.png}
+\XMUMSetBuildingColor{xmum_building.png}
+\end{verbatim}
+
+\subsection{页面组件命令}
+\noindent 类文件提供了若干可复用页面命令：
+\begin{table}[H]
+    \centering
+    \begin{tabular}{@{}ll@{}}
+        \toprule
+        命令 & 作用 \\
+        \midrule
+        \texttt{\string\XMUMMakeCover} & 白色背景封面页 \\
+        \texttt{\string\XMUMMakeCoverWithBackground} & 深色背景封面页 \\
+        \midrule
+        \texttt{\string\XMUMLogoPage} & 白底 LOGO 展示页 \\
+        \texttt{\string\XMUMLogoPageWithBackground} & 深底 LOGO 展示页 \\
+        \midrule
+        \texttt{\string\XMUMSchoolBackgroundPageBlue} & 蓝色建筑背景页 \\
+        \texttt{\string\XMUMSchoolBackgroundPageWhite} & 白色建筑背景页 \\
+        \texttt{\string\XMUMSchoolBackgroundPageColor} & 彩色建筑背景页 \\
+        \midrule
+        \texttt{\string\XMUMCenterTextPage\{text\}} & 生成一页居中大字页面 \\
+        \midrule
+        \texttt{\string\XMUMMarkRealLastPage} & 标记正文真实末页（用于页脚``共 N 页''统计） \\
+        \bottomrule
+    \end{tabular}
+    \caption{页面组件命令一览}
+\end{table}
+
+\noindent 例如：
+\begin{verbatim}
+\XMUMCenterTextPage{这是一个模板说明}
+\end{verbatim}
+
+\subsection{末页标注说明}
+\noindent 本模板使用 \texttt{\string\zlabel} 来标记正文的真实末页，确保页脚中的``共 N 页''统计正确。请在正文最后一页的合适位置（建议标注在末页的顶部）调用该命令：
+\begin{verbatim}
+\newpage
+\XMUMMarkRealLastPage
+\end{verbatim}
+
+\subsection{默认版式与环境}
+\begin{itemize}
+    \item 文档基类：\texttt{ctexart}（\texttt{11pt, a4paper}）。
+    \item 页面边距：上下左右均为 \texttt{2.5cm}。
+    \item 代码高亮：已预设 \texttt{listings} 的 \texttt{cpp} 高亮风格，可直接使用 \texttt{lstlisting}。
+    \item 页眉页脚：默认启用 \texttt{fancyhdr}，包含顶部横幅与底部页码统计。
+\end{itemize}
+
+\newpage
+\XMUMMarkRealLastPage
+
+\section{代码示例}
+\begin{lstlisting}
+#include <bits/stdc++.h>
+using namespace std;
+
+typedef pair<int, int> pii;
+
+const int N = 2e5 + 5;
+
+vector<pii> G[N];
+int dis[N];
+priority_queue<pii, vector<pii>, greater<pii>> pq;
+
+void Dijkstra(int s) {
+    memset(dis, 0x3f, sizeof(dis));
+    dis[s] = 0; pq.push({0, s});
+    while (!pq.empty()) {
+        auto [mind, u] = pq.top(); pq.pop();
+        if (mind > dis[u]) continue;
+        for (auto [v, w] : G[u]) {
+            if (dis[v] > dis[u] + w) {
+                dis[v] = dis[u] + w;
+                pq.push({dis[v], v});
+            }
+        }
+    }
+}
+
+int main() {
+    int n, m, s;
+    cin >> n >> m >> s;
+    while (m--) {
+        int u, v, w;
+        cin >> u >> v >> w;
+        G[u].push_back({v, w});
+    }
+    
+    Dijkstra(s);
+    
+    for (int i = 1; i <= n; i++) {
+        cout << dis[i] << " ";
+    }
+    return 0;
+}
+\end{lstlisting}
+
+\newpage
+
+\section*{附录一：小组联系方式}
+\begin{itemize}
+    \item 主要邮箱：\url{xmumcpc2025@outlook.com}
+    \item 备用邮箱：\url{xmumcpc2025@foxmail.com}
+\end{itemize}
+
+\section*{附录二：小组项目地址}
+\begin{itemize}
+    \item \url{https://github.com/Xiamen-University-Malaysia/XMUM_ICPC_CCPC}
+\end{itemize}
+
+\XMUMSchoolBackgroundPageBlue
+\XMUMSchoolBackgroundPageWhite
+\XMUMSchoolBackgroundPageColor
+
+\XMUMLogoPage
+\XMUMLogoPageWithBackground
+
+\end{document}

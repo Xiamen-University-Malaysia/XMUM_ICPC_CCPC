@@ -34,24 +34,27 @@
 
 详细信息可阅读[下方](https://github.com/Xiamen-University-Malaysia/XMUM_ICPC_CCPC#初始提案手册)的[初始提案（手册）](Proposal_2026-03-06_CN.pdf)和[见面会](meeting/meeting_2026-04-15_slide.pdf)的内容。
 
-## 训练教室
+## 训练教室以及参赛日程
 
-| Date | [Academic Calendar](https://www.xmu.edu.my/admissions/academic-calendar) Date | Venue | Time | Notes |
-| :---: | --- | :---: | :---: | :---: |
-| 2026-09-19 | Saturday of Orientation Week | A2-103 | 12:00 - 18:00 | CCPC 网络赛（待定） |
-| 2026-09-20 | Sunday of Week 1 | A2-103 | 12:00 - 18:00 | CCPC 网络赛（待定） |
-| 2026-10-04 | Sunday of Week 2 | A2-103 | 12:00 - 18:00 | |
-| 2026-10-11 | Sunday of Week 3 | A2-103 | 12:00 - 18:00 | |
-| 2026-10-18 | Sunday of Week 4 | A2-103 | 12:00 - 18:00 | |
-| 2026-10-25 | Sunday of Week 5 | A2-103 | 12:00 - 18:00 | |
-| 2026-11-01 | Sunday of Week 6 | A2-103 | 12:00 - 18:00 | |
-| 2026-11-08 | Sunday of Week 7 | A2-103 | 12:00 - 18:00 | |
-| 2026-11-15 | Sunday of Week 8 | A2-103 | 12:00 - 18:00 | |
-| 2026-11-22 | Sunday of Week 9 | A2-103 | 12:00 - 18:00 | |
-| 2026-11-29 | Sunday of Week 10 | A2-103 | 12:00 - 18:00 | |
-| 2026-12-06 | Sunday of Week 11 | A2-103 | 12:00 - 18:00 | |
-| 2026-12-13 | Sunday of Week 12 | A2-103 | 12:00 - 18:00 | |
-| 2026-12-20 | Sunday of Week 13 | A2-103 | 12:00 - 18:00 | |
+| Date<br>[Academic Calendar](https://www.xmu.edu.my/admissions/academic-calendar) | Venue | Time | Notes |
+| --- | :---: | :---: | :---: |
+| 2026-09-06<br>周日 | / | / | ICPC 网络赛 - 第一场 |
+| 2026-09-12<br>周六 | / | / | ICPC 网络赛 - 第二场 |
+| 2026-09-19<br>周六 Orientation Week | A2-103 | 12:00 - 18:00 | CCPC 网络赛 |
+| 2026-09-20<br>周日 Week 1 | A2-103 | 12:00 - 18:00 | |
+| 2026-10-04<br>周日 Week 2 | A2-103 | 12:00 - 18:00 | |
+| 2026-10-11<br>周日 Week 3 | A2-103 | 12:00 - 18:00 | ICPC 西安 - 西北工业大学 |
+| 2026-10-18<br>周日 Week 4 | A2-103 | 12:00 - 18:00 | ICPC 沈阳 - 东北大学<br>CCPC 长春 - 东北师范大学 |
+| 2026-10-25<br>周日 Week 5 | A2-103 | 12:00 - 18:00 | ICPC 成都 - 电子科技大学<br>CCPC 女生赛 - 成都信息工程大学 |
+| 2026-11-01<br>周日 Week 6 | A2-103 | 12:00 - 18:00 | ICPC 武汉 - 武汉大学 |
+| 2026-11-08<br>周日 Week 7 | A2-103 | 12:00 - 18:00 | ICPC 南京 - 南京航空航天大学<br>CCPC 荆州 - 武汉大学 & 长江大学 |
+| 2026-11-15<br>周日 Week 8 | A2-103 | 12:00 - 18:00 | CCPC 乐山 - 乐山师范学院 |
+| 2026-11-22<br>周日 Week 9 | A2-103 | 12:00 - 18:00 | CCPC 厦门 - 厦门大学 |
+| 2026-11-29<br>周日 Week 10 | A2-103 | 12:00 - 18:00 | ICPC 南昌 - 江西师范大学 |
+| 2026-12-06<br>周日 Week 11 | A2-103 | 12:00 - 18:00 | ICPC 上海 - 上海大学 |
+| 2026-12-13<br>周日 Week 12 | A2-103 | 12:00 - 18:00 | |
+| 2026-12-20<br>周日 Week 13 | A2-103 | 12:00 - 18:00 | |
+| 2027-01-10<br>周日 Exam Week | / | / | ICPC 香港 - 香港大学 |
 
 备注：
 
